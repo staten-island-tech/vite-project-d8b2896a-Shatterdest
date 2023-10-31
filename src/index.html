@@ -5,16 +5,16 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <title>Vite App</title>
 </head>
 
 <body>
-  <h1 className="text-3xl font-bold underline">
-    Hello world!
+  <h1 class=''>
+    touch grass
   </h1>
-  <form action="">
-    <p class="form-label">np</p>
+  <form id="form" action="">
+    <p class="form-label">Pick Agent Type: </p>
     <input type="checkbox" name="type" value="Duelist">
     <label for="type">Duelist</label>
     <input type="checkbox" name="type" value="Initiator">
@@ -23,7 +23,7 @@
     <label for="type">Controller</label>
     <input type="checkbox" name="type" value="Sentinel">
     <label for="type">Sentinel</label>
-
+    <input type="submit" value="Submit" id="submit">
   </form>
   <div id="container"></div>
   <script type="module" src="./js/main.js"></script>
