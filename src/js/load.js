@@ -6,6 +6,7 @@ export function load(data, s) {
         <h3 class="agent-type">${data[i].role.displayName}</h3>
         <p class="description">${data[i].description}</p>
         </div>`;
+        console.log(`loading ${data[i].displayName}`)
         s.container.insertAdjacentHTML("beforeend", cardLayout);
     }
 
