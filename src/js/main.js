@@ -1,21 +1,25 @@
-import { getData } from './data.js'
-import { load } from './load.js'
+import { getData } from "./data.js";
+import { load } from "./load.js";
+import { dom } from "./dom.js";
+import { sortCards } from "./sort.js"
 
-const data = getData()
-const jdata = JSON.stringify(getData())
-console.log(data)
+const data = getData();
+const jdata = JSON.stringify(getData());
+console.log(data);
 
-const selectors = {
-    form: document.getElementById('form'),
-    submit: document.getElementById('submit'),
-    container: document.getElementById('container')
-}
-console.log(selectors)
-
-selectors.form.addEventListener('submit', (e) => {
-    e.preventDefault()
-    console.log('runnin!')
-
-})
-
+const selectors = dom();
+console.log(selectors);
 load(getData(), selectors);
+
+selectors.form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  
+  const inputs = {
+    duelist: selectors.duelist.checked,
+    initiator: selectors.initiator.checked,
+    controller: selectors.controller.checked,
+    sentinel: selectors.sentinel.checked
+  }
+  sortCards(inputs, selectors, getData());
+  selectors.form.reset();
+});
