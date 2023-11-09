@@ -3,6 +3,7 @@ export function getData() {
     {
       uuid: "e370fa57-4757-3604-3648-499e1f642d3f",
       displayName: "Gekko",
+      cost: 20,
       description:
         "Gekko the Angeleno leads a tight-knit crew of calamitous creatures. His buddies bound forward, scattering enemies out of the way, with Gekko chasing them down to regroup and go again.",
       developerName: "Aggrobot",
@@ -83,6 +84,7 @@ export function getData() {
     {
       uuid: "dade69b4-4f5a-8528-247b-219e5a1facd6",
       displayName: "Fade",
+      cost: 25,
       description:
         "Turkish bounty hunter Fade unleashes the power of raw nightmare to seize enemy secrets. Attuned with terror itself, she hunts down targets and reveals their deepest fears - before crushing them in the dark.",
       developerName: "BountyHunter",
@@ -163,6 +165,7 @@ export function getData() {
     {
       uuid: "5f8d3a7f-467b-97f3-062c-13acf203c006",
       displayName: "Breach",
+      cost: 20,
       description:
         "The bionic Swede Breach fires powerful, targeted kinetic blasts to aggressively clear a path through enemy ground. The damage and disruption he inflicts ensures no fight is ever fair.",
       developerName: "Breach",
@@ -242,6 +245,7 @@ export function getData() {
     {
       uuid: "cc8b64c8-4b25-4ff9-6e7f-37b4da43d235",
       displayName: "Deadlock",
+      cost: 15,
       description:
         "Norwegian operative Deadlock deploys an array of cutting-edge nanowire to secure the battlefield from even the most lethal assault. No one escapes her vigilant watch, nor survives her unyielding ferocity.",
       developerName: "Cable",
@@ -329,6 +333,7 @@ export function getData() {
     {
       uuid: "f94c3b30-42be-e959-889c-5aa313dba261",
       displayName: "Raze",
+      cost: 50,
       description:
         'Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle, she excels at flushing entrenched enemies and clearing tight spaces with a generous dose of "boom."',
       developerName: "Clay",
@@ -408,6 +413,7 @@ export function getData() {
     {
       uuid: "22697a3d-45bf-8dd7-4fec-84a9e28c69d7",
       displayName: "Chamber",
+      cost: 30,
       description:
         "Well-dressed and well-armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.",
       developerName: "Deadeye",
@@ -487,6 +493,7 @@ export function getData() {
     {
       uuid: "601dbbe7-43ce-be57-2a40-4abd24953621",
       displayName: "KAY/O",
+      cost: 25,
       description:
         "KAY/O is a machine of war built for a single purpose: neutralizing radiants. His power to Suppress enemy abilities dismantles his opponents' capacity to fight back, securing him and his allies the ultimate edge.",
       developerName: "Grenadier",
@@ -567,6 +574,7 @@ export function getData() {
     {
       uuid: "6f2a04ca-43e0-be17-7f36-b3908627744d",
       displayName: "Skye",
+      cost: 40,
       description:
         "Hailing from Australia, Skye and her band of beasts trailblaze the way through hostile territory. With her creations hampering the enemy, and her power to heal others, the team is strongest and safest by Skye's side.",
       developerName: "Guide",
@@ -646,6 +654,7 @@ export function getData() {
     {
       uuid: "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
       displayName: "Cypher",
+      cost: 35,
       description:
         "The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on the enemy's every move. No secret is safe. No maneuver goes unseen. Cypher is always watching.",
       developerName: "Gumshoe",
@@ -725,6 +734,7 @@ export function getData() {
     {
       uuid: "320b2a48-4d9b-a075-30f1-1f93a9b638fa",
       displayName: "Sova",
+      cost: 50,
       description:
         "Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide. ",
       developerName: "Hunter",
@@ -811,6 +821,7 @@ export function getData() {
     {
       uuid: "1e58de9c-4950-5125-93e9-a0aee9f98746",
       displayName: "Killjoy",
+      cost: 50,
       description:
         "The genius of Germany, Killjoy effortlessly secures key battlefield positions with her arsenal of inventions. If their damage doesn't take her enemies out, the debuff her robots provide will make short work of them.",
       developerName: "Killjoy",
@@ -890,6 +901,7 @@ export function getData() {
     {
       uuid: "95b78ed7-4637-86d9-7e41-71ba8c293152",
       displayName: "Harbor",
+      cost: 30,
       description:
         "Hailing from India’s coast, Harbor storms the field wielding ancient technology with dominion over water. He unleashes frothing rapids and crushing waves to shield his allies, or pummel those that oppose him.",
       developerName: "Mage",
@@ -969,6 +981,7 @@ export function getData() {
     {
       uuid: "707eab51-4836-f488-046a-cda6bf494859",
       displayName: "Viper",
+      cost: 40,
       description:
         "The American Chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and choke the enemy's vision. If the toxins don't kill her prey, her mindgames surely will.",
       developerName: "Pandemic",
@@ -1056,6 +1069,7 @@ export function getData() {
     {
       uuid: "eb93336a-449b-9c1b-0a54-a891f7921d69",
       displayName: "Phoenix",
+      cost: 25,
       description:
         "Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he's got backup or not, he's rushing in to fight on his own terms.",
       developerName: "Phoenix",
@@ -1142,6 +1156,7 @@ export function getData() {
     {
       uuid: "41fb69c1-4189-7b37-f117-bcaf1e96f1bf",
       displayName: "Astra",
+      cost: 35,
       description:
         "Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full command of her astral form and a talent for deep strategic foresight, she's always eons ahead of her enemy's next move.",
       developerName: "Rift",
@@ -1229,6 +1244,7 @@ export function getData() {
     {
       uuid: "9f0d8ba9-4140-b941-57d3-a7ad57c6b417",
       displayName: "Brimstone",
+      cost: 35,
       description:
         "Joining from the U.S.A., Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and safely make him the unmatched boots-on-the-ground commander.",
       developerName: "Sarge",
@@ -1308,6 +1324,7 @@ export function getData() {
     {
       uuid: "0e38b510-41a8-5780-5e8f-568b2a4f2d6c",
       displayName: "Iso",
+      cost: 30,
       description:
         "Chinese fixer for hire Iso falls into a flow state to dismantle the opposition. Reconfiguring ambient energy into bulletproof protection, he advances with focus towards his next duel to the death.",
       developerName: "Sequoia",
@@ -1396,6 +1413,7 @@ export function getData() {
     {
       uuid: "bb2a4828-46eb-8cd1-e765-15848195d751",
       displayName: "Neon",
+      cost: 25,
       description:
         "Filipino Agent Neon surges forward at shocking speeds, discharging bursts of bioelectric radiance as fast as her body generates it. She races ahead to catch enemies off guard then strikes them down quicker than lightning.",
       developerName: "Sprinter",
@@ -1476,6 +1494,7 @@ export function getData() {
     {
       uuid: "7f94d92c-4234-0a36-9646-3a87eb8b5c89",
       displayName: "Yoru",
+      cost: 35,
       description:
         "Japanese native Yoru rips holes straight through reality to infiltrate enemy lines unseen. Using deception and aggression in equal measure, he gets the drop on each target before they know where to look.",
       developerName: "Stealth",
@@ -1555,6 +1574,7 @@ export function getData() {
     {
       uuid: "569fdd95-4d10-43ab-ca70-79becc718b46",
       displayName: "Sage",
+      cost: 30,
       description:
         "The bastion of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off forceful assaults, she provides a calm center to a hellish battlefield.",
       developerName: "Thorne",
@@ -1634,6 +1654,7 @@ export function getData() {
     {
       uuid: "a3bfb853-43b2-7238-a4f1-ad90e9e46bcc",
       displayName: "Reyna",
+      cost: 35,
       description:
         "Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her sharply dependant on performance. ",
       developerName: "Vampire",
