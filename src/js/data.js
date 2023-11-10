@@ -1734,6 +1734,7 @@ export function getData() {
     {
       uuid: "8e253930-4c05-31dd-1b6c-968525494517",
       displayName: "Omen",
+      cost: 40,
       description:
         "A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to uncover where he might strike next.",
       developerName: "Wraith",
@@ -1813,6 +1814,7 @@ export function getData() {
     {
       uuid: "add6443a-41bd-e414-f6ad-e58d267f4e95",
       displayName: "Jett",
+      cost: 50,
       description:
         "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies up before they even know what hit them.",
       developerName: "Wushu",

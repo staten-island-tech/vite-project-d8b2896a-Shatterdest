@@ -6,7 +6,8 @@ export function dom() {
     duelist: document.getElementById('duelist'),
     initiator: document.getElementById('initiator'),
     controller: document.getElementById('controller'),
-    sentinel: document.getElementById('sentinel')
+    sentinel: document.getElementById('sentinel'),
+    toggle: document.getElementById('toggle')
   };
   return selectors;
 }
