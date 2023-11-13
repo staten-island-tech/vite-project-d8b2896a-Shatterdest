@@ -6,11 +6,10 @@ import "../styles/style.css";
 
 const data = getData();
 const jdata = JSON.stringify(getData());
-console.log(data);
-
 const selectors = dom();
+console.log(data);
 console.log(selectors);
-load(getData(), selectors);
+load(data, selectors);
 
 selectors.form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -21,20 +20,19 @@ selectors.form.addEventListener("submit", (e) => {
     controller: selectors.controller.checked,
     sentinel: selectors.sentinel.checked,
   };
-  sortCards(inputs, selectors, getData());
+  sortCards(inputs, selectors, data);
 });
 
-console.log(selectors.toggle.value)
-selectors.toggle.addEventListener('click', toggle())
-
-
-function toggle() {
-  const btn = document.getElementById('toggle');
+selectors.toggle.addEventListener("click", () => {
+  const btn = selectors.toggle;
   if (btn.value === "notGold") {
     btn.value = "Gold";
     console.log("toggling to gold");
+    console.log(selectors.toggle.value);
+    let cost = data.map((obj) => obj.cost * 2)
   } else {
     btn.value = "notGold";
     console.log("toggling off gold");
+    console.log(selectors.toggle.value);
   }
-}
+});
