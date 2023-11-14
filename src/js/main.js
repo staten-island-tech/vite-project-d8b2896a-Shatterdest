@@ -1,6 +1,6 @@
 import { getData } from "./data.js";
 import { load } from "./load.js";
-import { dom } from "./dom.js";
+import { dom, inp } from "./dom.js";
 import { sortCards } from "./sort.js";
 import "../styles/style.css";
 
@@ -13,26 +13,26 @@ load(data, selectors);
 
 selectors.form.addEventListener("submit", (e) => {
   e.preventDefault();
-
-  const inputs = {
-    duelist: selectors.duelist.checked,
-    initiator: selectors.initiator.checked,
-    controller: selectors.controller.checked,
-    sentinel: selectors.sentinel.checked,
-  };
+  let inputs = inp(selectors);
   sortCards(inputs, selectors, data);
 });
 
 selectors.toggle.addEventListener("click", () => {
+  let inputs = inp(selectors);
   const btn = selectors.toggle;
   if (btn.value === "notGold") {
+    let d = getData()
+    let cost = getData().map((obj) => obj.cost * 2);
     btn.value = "Gold";
     console.log("toggling to gold");
-    console.log(selectors.toggle.value);
-    let cost = data.map((obj) => obj.cost * 2)
+    d.forEach((card, i) => {
+      card.cost = cost[i];
+    });
+    console.log(d, data)
+    sortCards(inputs,selectors,d)
   } else {
     btn.value = "notGold";
     console.log("toggling off gold");
-    console.log(selectors.toggle.value);
+    sortCards(inputs,selectors, getData())
   }
 });

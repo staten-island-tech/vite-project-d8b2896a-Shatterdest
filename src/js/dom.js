@@ -11,3 +11,13 @@ export function dom() {
   };
   return selectors;
 }
+
+export function inp(selectors){
+  const inp = {
+    duelist: selectors.duelist.checked,
+    initiator: selectors.initiator.checked,
+    controller: selectors.controller.checked,
+    sentinel: selectors.sentinel.checked,
+  };
+  return inp
+}
