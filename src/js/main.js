@@ -30,9 +30,14 @@ selectors.toggle.addEventListener("click", () => {
     });
     console.log(d, data)
     sortCards(inputs,selectors,d)
+    document.body.classList.remove('dark')
+    document.body.classList.add('gold')
+
   } else {
     btn.value = "notGold";
     console.log("toggling off gold");
     sortCards(inputs,selectors, getData())
+    document.body.classList.remove('gold')
+    document.body.classList.add('dark')
   }
 });

@@ -2,9 +2,9 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  --black: #131313;
+  --black: #313131;
   --dark-gray: #242424;
-  --dark-gold: #ffbf00;
+  --dark-gold: #f3b600;
   --gold: #f5bf03;
   --link: #646cff;
   --white: rgba(255, 255, 255, 0.87);
@@ -20,18 +20,22 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  color: var(--white);
+  color: var(--text);
   background-color: var(--secondary);
 }
 
 .dark {
   --primary: var(--black);
   --secondary: var(--dark-gray);
+  --tertiary: var(--black);
+  --text: var(--white);
 }
 
-.gold{
+.gold {
   --primary: var(--dark-gold);
   --secondary: var(--gold);
+  --tertiary: var(--white);
+  --text: var(--black)
 }
 
 a {
@@ -64,16 +68,23 @@ h1 {
 
 .card {
   position: relative;
-  width: 22%;
   height: 60vh;
   display: flex;
+  flex: 1 1 auto;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   margin: 2rem auto;
   flex-basis: auto;
-  border: rgba(0, 0, 0) solid 3px;
+  border: var(--tertiary) solid 3px;
   border-radius: 20px;
+  margin-right: 2rem;
+}
+
+button, #submit {
+  background-color: var(--white);
+  border: var(--white) solid 3px;
+  border-radius: 5px;
 }
 
 #form {
@@ -82,6 +93,7 @@ h1 {
 
 #submit {
   display: block;
+  margin-bottom: 0.5rem;
 }
 
 .display-name {
@@ -94,6 +106,12 @@ h1 {
 
 .description {
   font-size: 1rem;
+}
+
+@media screen and (min-width: 1301px) {
+  .card {
+    width: 22%;
+  }
 }
 
 @media screen and (max-width: 1300px) {
