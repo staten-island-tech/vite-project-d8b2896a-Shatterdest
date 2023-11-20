@@ -68,7 +68,7 @@ h1 {
 
 .card {
   position: relative;
-  height: 60vh;
+  height: fit-content;
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
@@ -79,6 +79,7 @@ h1 {
   border: var(--tertiary) solid 3px;
   border-radius: 20px;
   margin-right: 2rem;
+  overflow: hidden;
 }
 
 button, #submit {
@@ -98,14 +99,32 @@ button, #submit {
 
 .display-name {
   font-size: 2rem;
+  margin-top: .5rem;
 }
 
 .agent-type {
   font-size: 1.4rem;
+  margin-bottom: .5rem;
 }
 
 .description {
   font-size: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.cost{
+  font-size: 1rem;
+  margin: 0;
+}
+
+.img {
+  width: 50%;
+}
+
+.class-img {
+  width: 15%;
+  margin-top: 1.5rem;
 }
 
 @media screen and (min-width: 1301px) {
