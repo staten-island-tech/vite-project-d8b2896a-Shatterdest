@@ -2,7 +2,6 @@ import { getData } from "./data.js";
 import { load } from "./load.js";
 import { dom, inp } from "./dom.js";
 import { sortCards } from "./sort.js";
-import "../styles/style.css";
 
 const data = getData();
 const jdata = JSON.stringify(getData());
