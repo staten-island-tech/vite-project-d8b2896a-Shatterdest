@@ -4,7 +4,6 @@ import { dom, inp } from "./dom.js";
 import { sortCards } from "./sort.js";
 
 const data = getData();
-const jdata = JSON.stringify(getData());
 const selectors = dom();
 console.log(data);
 console.log(selectors);

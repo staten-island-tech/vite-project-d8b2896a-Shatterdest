@@ -1,15 +1,9 @@
+@import url("variables.css");
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  --black: #313131;
-  --dark-gray: #242424;
-  --dark-gold: #f3b600;
-  --gold: #f5bf03;
-  --link: #646cff;
-  --white: rgba(255, 255, 255, 0.87);
-  --h1: 7.067rem;
-
 }
 
 body {
@@ -35,7 +29,7 @@ body {
   --primary: var(--dark-gold);
   --secondary: var(--gold);
   --tertiary: var(--white);
-  --text: var(--black)
+  --text: var(--black);
 }
 
 a {
@@ -47,7 +41,6 @@ a {
 a:hover {
   color: var(--link);
 }
-
 
 h1 {
   margin-top: 0;
@@ -82,7 +75,12 @@ h1 {
   overflow: hidden;
 }
 
-button, #submit {
+.gold .card {
+  box-shadow: var(--white) 0px 16px 48px 0px
+}
+
+button,
+#submit {
   background-color: var(--white);
   border: var(--white) solid 3px;
   border-radius: 5px;
@@ -90,6 +88,11 @@ button, #submit {
 
 #form {
   font-size: 1.4rem;
+  margin-left: 1rem;
+}
+
+#toggle {
+  margin-left: 1rem;
 }
 
 #submit {
@@ -99,12 +102,12 @@ button, #submit {
 
 .display-name {
   font-size: 2rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .agent-type {
   font-size: 1.4rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .description {
@@ -113,7 +116,7 @@ button, #submit {
   margin-right: 1rem;
 }
 
-.cost{
+.cost {
   font-size: 1rem;
   margin: 0;
 }
