@@ -9,6 +9,8 @@ console.log(data);
 console.log(selectors);
 load(data, selectors);
 
+selectors.toggle.value = 'notGold'
+
 selectors.form.addEventListener("submit", (e) => {
   e.preventDefault();
   let inputs = inp(selectors);

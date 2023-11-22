@@ -7,7 +7,7 @@ export function dom() {
     initiator: document.getElementById('initiator'),
     controller: document.getElementById('controller'),
     sentinel: document.getElementById('sentinel'),
-    toggle: document.getElementById('toggle')
+    toggle: document.getElementById('cb3-8')
   };
   return selectors;
 }
