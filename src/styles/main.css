@@ -131,6 +131,14 @@ button,
   margin-top: 1.5rem;
 }
 
+#tglg {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  font-weight: 500;
+  margin-right: .5rem;
+  margin-top: 0;
+}
 
 @media screen and (min-width: 1301px) {
   .card {
