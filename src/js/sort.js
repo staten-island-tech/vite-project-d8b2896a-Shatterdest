@@ -1,18 +1,14 @@
 import { load } from "./load.js";
 
 export function sortCards(bool, s, d) {
-  const duelists = structuredClone(d).filter(
-    (agent) => agent.role.displayName === "Duelist"
-  );
-  const initiators = structuredClone(d).filter(
+  const duelists = d.filter((agent) => agent.role.displayName === "Duelist");
+  const initiators = d.filter(
     (agent) => agent.role.displayName === "Initiator"
   );
-  const controller = structuredClone(d).filter(
+  const controller = d.filter(
     (agent) => agent.role.displayName === "Controller"
   );
-  const sentinel = structuredClone(d).filter(
-    (agent) => agent.role.displayName === "Sentinel"
-  );
+  const sentinel = d.filter((agent) => agent.role.displayName === "Sentinel");
   console.log(
     `sorting by: duelist-${bool.duelist}, initiator-${bool.initiator}, controller-${bool.controller}, sentinel-${bool.sentinel}`
   );
