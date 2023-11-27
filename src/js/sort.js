@@ -1,14 +1,14 @@
 import { load } from "./load.js";
 
-export function sortCards(bool, s, d) {
-  const duelists = d.filter((agent) => agent.role.displayName === "Duelist");
-  const initiators = d.filter(
+export function sortCards(bool, s, data) {
+  const duelists = data.filter((agent) => agent.role.displayName === "Duelist");
+  const initiators = data.filter(
     (agent) => agent.role.displayName === "Initiator"
   );
-  const controller = d.filter(
+  const controller = data.filter(
     (agent) => agent.role.displayName === "Controller"
   );
-  const sentinel = d.filter((agent) => agent.role.displayName === "Sentinel");
+  const sentinel = data.filter((agent) => agent.role.displayName === "Sentinel");
   console.log(
     `sorting by: duelist-${bool.duelist}, initiator-${bool.initiator}, controller-${bool.controller}, sentinel-${bool.sentinel}`
   );
@@ -36,6 +36,6 @@ export function sortCards(bool, s, d) {
     bool.sentinel === false
   ) {
     console.log("loading all");
-    load(d, s);
+    load(data, s);
   }
 }
